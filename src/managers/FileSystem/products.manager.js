@@ -35,23 +35,31 @@ class productManager{
     }
     
 
-    createProducts=async newProduct()=>{
+    createProducts = async newProduct=>{
         try{
             
             const products = await this.readProducts();
-            const product = {
-                title,
-                description,
-                precio,
-                thumbnail,
-                code,
-                stock}
-                
+            
             if (products.length===0){
                 newProduct.id=1;
             }
             else{
                 newProduct.id=products[products.length-1].id+1;
+            }
+            const product = {
+                id:newProduct.id,
+                title: newProduct.title,
+                description: newProduct.description,
+                precio: newProduct.precio,
+                thumbnail: newProduct.thumbnail,
+                code: newProduct.code,
+                stock: newProduct.stock
+            };
+            
+            let repeatCode=products.some(product => product.code === newProduct.code);
+
+            if (repeatCode){
+                return "el codigo ya existe"
             }
             products.push(newProduct);
             await fs.promises.writeFile(path, JSON.stringify(products, null, '\t'));
@@ -61,70 +69,72 @@ class productManager{
             console.log(error)
         }
     }
-}
-
-//updateProducts=async()=>{}
-
-//deleteProducts=async()=>{}
 
 
+    updateProducts=async(id)=>{
+        try{
+            const products=await this.readProducts();
+            const productIndex=products.findIndex(product=>product.id===id);
+            
+            if(productIndex===-1){
+                return "producto no encontrado";
+            }
+            else{
+                products[productIndex].title="producto actualizado";
+                products[productIndex].description="descripcion actualizada";
+                products[productIndex].precio="precio actualizado";
+                products[productIndex].thumbnail="imagen actualizada";
+                products[productIndex].code="codigo actualizado";
+                products[productIndex].stock="stock actualizado";
 
-
-/*
-    addProducts(title, description, precio, thumbnail,code,stock){
-        
-        this.products.length;
-        let repeatCode=this.products.some(product => product.code === code);
-        
-
-        let product = {
-            title,
-            description,
-            precio,
-            thumbnail,
-            code,
-            stock,
-            id: this.products.length-1
+                await fs.promises.writeFile(path, JSON.stringify(products, null, '\t'));
+                return products[productIndex];
+            }
         }
-
-        if (repeatCode){
-            return"el codigo ya existe"
+        catch(error){
+            console.log(error);
         }
-        else{ 
-            this.products.push(product);
-        }
-        return this.products;
     }
-
-
-    getproductsById(id){
-        let product = this.products.find(product => product.id === id);
-        if(product){
+    
+    getproduct=async(id)=>{
+        try{
+            const products=await this.readProducts();
+            const product=products.find(product=>product.id===id);
             return product;
-        }else{
-            return "producto no encontrado";
+        }
+        catch(error){
+            console.log(error);
         }
     }
 
+    deleteProduct=async(id)=>{
+        try{
+            const products=await this.readProducts();
+            const productIndex=products.findIndex(product=>product.id===id);
+            if(productIndex===-1){
+                return "producto no encontrado";
+            }
+            else{
+                const product=products.splice(productIndex,1);
+                await fs.promises.writeFile(path, JSON.stringify(products, null, '\t'));
+                return product;
+            }
+        }
+        catch(error){
+            console.log(error);
+        }
+    }
 }
-
-const producto1 = new productManager();
-producto1.getproducts();
-producto1.addProducts("producto prueba", "este es un producto prueba", "200", "sin image", "abc123", "25");
-producto1.addProducts("producto prueba", "este es un producto prueba", "200", "sin image", "abc123", "25");
-
-producto1.addProducts("producto prueba", "este es un producto prueba", "200", "sin image", "abc124", "25");
-console.log(producto1.getproducts());
-console.log(producto1.getproductsById(1));
-console.log(producto1.getproductsById(2));
-console.log(producto1.getproductsById(3));*/
-
-
-
-
-
-
-
-
 
 export default productManager
+
+
+
+
+
+
+
+
+
+
+
