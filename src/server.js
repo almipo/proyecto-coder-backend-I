@@ -22,7 +22,7 @@ app.post("/", upload.single("myFile"), (req, res) => {
 });
 
 app.use("/api/products", productsRouter);
-app.use("/api/cart", cartRouter);
+app.use("/api/carts", cartRouter);
 app.use("/api/users", userRouter);
 
 app.use((error, req, res, next) => {
