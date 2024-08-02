@@ -1,28 +1,12 @@
 [
-	[
-		{
-			"title": "Producto 1",
-			"description": "Descripción del producto 1",
-			"precio": 100,
-			"thumbnail": "imagen1.jpg",
-			"code": "abc123",
-			"stock": 10
-		},
-		{
-			"title": "Producto 2",
-			"description": "Descripción del producto 2",
-			"precio": 200,
-			"thumbnail": "imagen2.jpg",
-			"code": "def456",
-			"stock": 20
-		},
-		{
-			"title": "Producto 3",
-			"description": "Descripción del producto 3",
-			"precio": 300,
-			"thumbnail": "imagen3.jpg",
-			"code": "ghi789",
-			"stock": 30
-		}
-	]
+	{
+		"id": 1,
+		"title": "Producto 1",
+		"description": "Descripción del Producto 2",
+		"precio": 1500,
+		"status": "true",
+		"thumbnail": "imagen1.jpg",
+		"code": "P4523552",
+		"stock": 50
+	}
 ]
