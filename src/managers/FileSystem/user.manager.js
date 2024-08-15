@@ -1,4 +1,4 @@
-import {Router} from'express'
+/*import {Router} from'express'
 
 //const{Router}=require('express')
 
@@ -47,7 +47,7 @@ router. delete('/:uid', (req, res)=>{
 })
 
 
-
+*/
 
 
 

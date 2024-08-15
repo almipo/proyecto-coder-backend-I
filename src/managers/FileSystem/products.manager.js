@@ -51,17 +51,17 @@ class productManager {
             id:products.length === 0 ? 1 : products[products.length - 1].id + 1,
             title,
             description,
-            precio,
+            precio: Number(precio),
             status: state,
             thumbnail,
             code,
-            stock
+            stock:Number(stock)
         };
         
         let repeatCode=products.some(p => p.code === code);
 
         if (repeatCode){
-            return "el codigo ya existe"
+            return code
         }
         products.push(product);
         await fs.promises.writeFile(path, JSON.stringify(products, null, '\t'));

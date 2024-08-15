@@ -1,0 +1,43 @@
+<h2>AGREGAR PRODUCTO</h2>
+
+<form action="/realtimeProducts" method="POST" class="{{class}}" id="Product">
+<input type="text" name="title" placeholder="Nombre" value="{{#if title}}{{title}}{{/if}}" required>
+<input type="number" name="precio" placeholder="Precio" value="{{#if precio}}{{precio}}{{/if}}" required>
+<input type="text" name="description" placeholder="Descripción" value="{{#if description}}{{description}}{{/if}}" required>
+<input type="text" name="code" placeholder="Código" value="{{#if code}}{{code}}{{/if}}" required>
+<input type="number" name="stock" placeholder="Stock" value="{{#if stock}}{{stock}}{{/if}}" required>
+    
+    <p>Imagen: <input type="file" name="thumbnail" placeholder="Imagen"></p>   
+    <br>
+   <p>{{message}}</p>
+    <button type="submit">Agregar</button>
+</form>
+
+<div>
+  <h2>{{title2}}</h2>
+  <div id="productsContainer">
+    {{#if productsDb.length}}
+      {{#each productsDb}} 
+        <div class="container">
+          <div class="c1">
+            <h3>{{title}}</h3>
+          </div>
+          <p class="c2">{{description}}</p>
+          <p class="c3">Precio: ${{precio}}</p>
+          <p class="c4">Código: {{code}}</p>
+          {{#if stock}}
+            <p class="hayStock c5">Stock: {{stock}} unidades</p>
+          {{else}}
+            <p class="noHayStock c5">Stock: {{stock}} unidades</p>
+          {{/if}}
+          <button class="c6 delete-button" data-id={{id}}  type="button">Eliminar Producto</button>
+        </div>
+      {{/each}}
+    {{else}}
+      <p>No hay productos para mostrar.</p>
+    {{/if}}
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/assets/js/socket.js"></script>
