@@ -1,0 +1,46 @@
+<h1>Carrito ID: {{cartId}}</h1>
+
+{{#if products.length}}
+  {{#each products}}
+    <div class="recuadro">
+      <h3>{{name}}</h3>
+      <p>{{description}}</p>
+      <p>Precio: ${{price}}</p>
+      <p>Código: {{code}}</p>
+      {{#if stock}}
+        <p class="hayStock">Stock: {{stock}} unidades</p>
+      {{else}}
+        <p class="noHayStock">Stock: {{stock}} unidades</p>
+      {{/if}}
+    </div>
+  {{/each}}
+{{else}}
+  <p>No hay productos en este carrito.</p>
+{{/if}}
+
+<a href="/products">Volver a la lista de productos</a>
+<body>
+  <h2>Detalles del Carrito</h2>
+  {{#if products.length}}
+    <ul>
+      {{#each products}}
+        <li>
+          {{this.product.name}} - {{this.quantity}} unidades
+          <form action="/carts/{{cartId}}/products/{{this.product._id}}" method="DELETE">
+            <button type="submit">Eliminar</button>
+          </form>
+          <form action="/carts/{{cartId}}/products/{{this.product._id}}" method="PUT">
+            <input type="number" name="quantity" value="{{this.quantity}}" min="1">
+            <button type="submit">Actualizar cantidad</button>
+          </form>
+        </li>
+      {{/each}}
+    </ul>
+    <form action="/carts/{{cartId}}" method="DELETE">
+      <button type="submit">Eliminar todos los productos</button>
+    </form>
+  {{else}}
+    <p>El carrito está vacío.</p>
+  {{/if}}
+  <a href="/">Volver a la tienda</a>
+</body>

@@ -1,0 +1,16 @@
+<body>
+    <header>
+        <nav>
+            <a href="/user/create">Crear Usuario</a>
+            <a href="/">Inicio</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Lista de Usuarios</h1>
+        <ul>
+            {{#each users}}
+                <li>{{this.firstName}} {{this.lastName}} - {{this.email}}</li>
+            {{/each}}
+        </ul>
+    </main>
+</body>

@@ -1,0 +1,95 @@
+### productos
+
+GET http://localhost:8080/api/products?sort=asc
+
+
+
+### Crear producto
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+  {
+    "name": "Smartphone X10",
+    "description": "Pantalla de 6.5 pulgadas, 128GB de almacenamiento.",
+    "price": 750,
+    "code": "SPX55510",
+    "stock": 30,
+    "thumbnail": "img1.jpg",
+    "category": "Electrónica"
+  }
+ 
+
+
+
+### borrar producto
+DELETE http://localhost:8080/api/products/
+Content-Type: application/json
+
+{
+  "code": "15f"
+}
+
+
+
+### update product
+
+PUT http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "filter": { "code": "15d" },
+  "update": {
+    "price": 20005,
+    "stock": 100,
+    "name": "producto prueba 2"
+  }
+}
+
+
+
+### get specific product 
+
+
+GET http://localhost:8080/products/66d9b8cadf76305daa9dd174
+Content-Type: application/json
+
+
+####creacion de usuario
+POST http://localhost:8080/user/create
+Content-Type: application/json
+
+{
+  "name": "pres",
+  "lastname": "lopez",
+  "email":"juanlopedfggz@gmail.com "
+}
+
+
+### mostrar usuarios
+GET http://localhost:8080/user
+
+
+
+### CREAR CARRITO
+POST http://localhost:8080/cart
+Content-Type: application/json
+  
+  {
+    "code": "66",
+    "products": [
+
+    ]}
+
+
+
+
+### mostrar CARRITO
+GET http://localhost:8080/cart/66db3c3caf8752041e71b3ef
+Content-Type: application/json
+
+
+
+###agregar productos
+PUT http://localhost:8080/cart/66db3696fee4316d13129bf4/66d9b8cadf76305daa9dd174
+Content-Type: application/json
+

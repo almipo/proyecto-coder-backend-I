@@ -1,162 +1,309 @@
 [
 	{
-		"id": 1,
-		"title": "Producto 1",
-		"description": "Descripción del Producto 1",
-		"precio": 15,
-		"status": "true",
-		"thumbnail": "imagen1.jpg",
-		"code": "P452312",
-		"stock": 10
+	  "name": "Smartphone X10",
+	  "description": "Pantalla de 6.5 pulgadas, 128GB de almacenamiento.",
+	  "price": 750,
+	  "code": "SPX10",
+	  "stock": 30,
+	  "thumbnail": "img1.jpg",
+	  "category": "Electrónica"
 	},
 	{
-		"id": 2,
-		"title": "producto 2",
-		"description": "descripcion del producto 2",
-		"precio": "0",
-		"status": "true",
-		"thumbnail": null,
-		"code": "65ff",
-		"stock": 0
+	  "name": "Laptop Pro 2024",
+	  "description": "16GB RAM, 512GB SSD, pantalla 15.6 pulgadas.",
+	  "price": 1200,
+	  "code": "LP2024",
+	  "stock": 15,
+	  "thumbnail": "img2.jpg",
+	  "category": "Computación"
 	},
 	{
-		"id": 3,
-		"title": "producto 3",
-		"description": "descripcion del producto 3",
-		"precio": "4",
-		"status": "true",
-		"thumbnail": null,
-		"code": "ddd43",
-		"stock": "56"
+	  "name": "Cámara DSLR Z50",
+	  "description": "20MP, lente 18-55mm, grabación 4K.",
+	  "price": 900,
+	  "code": "DSLRZ50",
+	  "stock": 20,
+	  "thumbnail": "img3.jpg",
+	  "category": "Fotografía"
 	},
 	{
-		"id": 5,
-		"title": "producto 4",
-		"description": "descripcion del producto 4",
-		"precio": 6,
-		"status": "true",
-		"thumbnail": null,
-		"code": "54fgd",
-		"stock": 0
+	  "name": "Tablet A7",
+	  "description": "10.4 pulgadas, 64GB de almacenamiento.",
+	  "price": 350,
+	  "code": "TAB-A7",
+	  "stock": 25,
+	  "thumbnail": "img4.jpg",
+	  "category": "Electrónica"
 	},
 	{
-		"id": 6,
-		"title": "producto 5",
-		"description": "descripcion del producto 5",
-		"precio": 5,
-		"status": "true",
-		"thumbnail": null,
-		"code": "345gfd",
-		"stock": 9
+	  "name": "Auriculares Bluetooth",
+	  "description": "Sonido envolvente, batería de 20 horas.",
+	  "price": 150,
+	  "code": "BT-HC200",
+	  "stock": 40,
+	  "thumbnail": "img5.jpg",
+	  "category": "Accesorios"
 	},
 	{
-		"id": 7,
-		"title": "6",
-		"description": "6",
-		"precio": 6,
-		"status": "true",
-		"thumbnail": null,
-		"code": "6",
-		"stock": 6
+	  "name": "Reloj Inteligente Series 6",
+	  "description": "Monitoreo de salud, GPS, pantalla AMOLED.",
+	  "price": 250,
+	  "code": "RS6",
+	  "stock": 30,
+	  "thumbnail": "img6.jpg",
+	  "category": "Electrónica"
 	},
 	{
-		"id": 8,
-		"title": "6",
-		"description": "6",
-		"precio": 6,
-		"status": "true",
-		"thumbnail": null,
-		"code": "7",
-		"stock": 6
+	  "name": "Teclado Mecánico RGB",
+	  "description": "Retroiluminación RGB, teclas programables.",
+	  "price": 100,
+	  "code": "TKRGB",
+	  "stock": 50,
+	  "thumbnail": "img7.jpg",
+	  "category": "Accesorios"
 	},
 	{
-		"id": 9,
-		"title": "6",
-		"description": "6",
-		"precio": 6,
-		"status": "true",
-		"thumbnail": null,
-		"code": "68",
-		"stock": 6
+	  "name": "Ratón Gaming X1",
+	  "description": "DPI ajustable, iluminación LED.",
+	  "price": 60,
+	  "code": "MGX1",
+	  "stock": 45,
+	  "thumbnail": "img8.jpg",
+	  "category": "Accesorios"
 	},
 	{
-		"id": 10,
-		"title": "6",
-		"description": "6",
-		"precio": 6,
-		"status": "true",
-		"thumbnail": null,
-		"code": "689",
-		"stock": 6
+	  "name": "Disco Duro Externo 1TB",
+	  "description": "Almacenamiento portátil, USB 3.0.",
+	  "price": 80,
+	  "code": "DDE1TB",
+	  "stock": 20,
+	  "thumbnail": "img9.jpg",
+	  "category": "Computación"
 	},
 	{
-		"id": 11,
-		"title": "6",
-		"description": "6",
-		"precio": 6,
-		"status": "true",
-		"thumbnail": null,
-		"code": "6897",
-		"stock": 6
+	  "name": "Monitor UltraWide 34\"",
+	  "description": "Resolución 3440x1440, 100Hz.",
+	  "price": 400,
+	  "code": "MW34",
+	  "stock": 10,
+	  "thumbnail": "img10.jpg",
+	  "category": "Computación"
 	},
 	{
-		"id": 12,
-		"title": "6",
-		"description": "6",
-		"precio": 6,
-		"status": "true",
-		"thumbnail": null,
-		"code": "68976",
-		"stock": 6
+	  "name": "Consola de Videojuegos ZX9",
+	  "description": "1TB de almacenamiento, incluye 2 controles.",
+	  "price": 500,
+	  "code": "CVZX9",
+	  "stock": 12,
+	  "thumbnail": "img11.jpg",
+	  "category": "Electrónica"
 	},
 	{
-		"id": 13,
-		"title": "6",
-		"description": "6",
-		"precio": 6,
-		"status": "true",
-		"thumbnail": null,
-		"code": "689767",
-		"stock": 6
+	  "name": "Smart TV 50\" 4K",
+	  "description": "Resolución 4K, Smart TV con aplicaciones integradas.",
+	  "price": 600,
+	  "code": "STV50",
+	  "stock": 8,
+	  "thumbnail": "img12.jpg",
+	  "category": "Electrónica"
 	},
 	{
-		"id": 14,
-		"title": "6",
-		"description": "6",
-		"precio": 6,
-		"status": "true",
-		"thumbnail": null,
-		"code": "6897677",
-		"stock": 6
+	  "name": "Proyector HD Mini",
+	  "description": "Resolución HD, portátil y fácil de usar.",
+	  "price": 200,
+	  "code": "PROJHD",
+	  "stock": 25,
+	  "thumbnail": "img13.jpg",
+	  "category": "Electrónica"
 	},
 	{
-		"id": 15,
-		"title": "6",
-		"description": "6",
-		"precio": 6,
-		"status": "true",
-		"thumbnail": null,
-		"code": "6897677999",
-		"stock": 6
+	  "name": "Altavoces Bluetooth 20W",
+	  "description": "Sonido de alta calidad, batería de 15 horas.",
+	  "price": 120,
+	  "code": "AB20W",
+	  "stock": 35,
+	  "thumbnail": "img14.jpg",
+	  "category": "Accesorios"
 	},
 	{
-		"id": 16,
-		"title": "9",
-		"description": "9",
-		"precio": 9,
-		"status": "true",
-		"thumbnail": null,
-		"code": "9",
-		"stock": 9
+	  "name": "Disco Duro Externo 2TB",
+	  "description": "Almacenamiento portátil, USB 3.0.",
+	  "price": 120,
+	  "code": "DDE2TB",
+	  "stock": 18,
+	  "thumbnail": "img15.jpg",
+	  "category": "Computación"
 	},
 	{
-		"id": 17,
-		"title": "producto 10",
-		"description": "5",
-		"precio": 5,
-		"status": "true",
-		"thumbnail": null,
-		"code": "3241dddd",
-		"stock": 0
+	  "name": "Lámpara LED Desk",
+	  "description": "Ajustable, luz cálida y fría.",
+	  "price": 45,
+	  "code": "LED-DESK",
+	  "stock": 50,
+	  "thumbnail": "img16.jpg",
+	  "category": "Hogar"
+	},
+	{
+	  "name": "Teclado Inalámbrico",
+	  "description": "Teclado compacto, batería recargable.",
+	  "price": 90,
+	  "code": "TK-WIR",
+	  "stock": 30,
+	  "thumbnail": "img17.jpg",
+	  "category": "Accesorios"
+	},
+	{
+	  "name": "Impresora Multifuncional",
+	  "description": "Impresión, escaneo y copia, Wi-Fi.",
+	  "price": 150,
+	  "code": "IMP-MULTI",
+	  "stock": 22,
+	  "thumbnail": "img18.jpg",
+	  "category": "Computación"
+	},
+	{
+	  "name": "Router Wi-Fi AC1200",
+	  "description": "Velocidad AC1200, cobertura amplia.",
+	  "price": 70,
+	  "code": "ROUTER1200",
+	  "stock": 28,
+	  "thumbnail": "img19.jpg",
+	  "category": "Electrónica"
+	},
+	{
+	  "name": "Caja de Herramientas",
+	  "description": "Caja robusta con compartimentos.",
+	  "price": 100,
+	  "code": "HERR-CX",
+	  "stock": 15,
+	  "thumbnail": "img20.jpg",
+	  "category": "Hogar"
+	},
+	{
+	  "name": "Cargador Rápido USB-C",
+	  "description": "Carga rápida, compatible con varios dispositivos.",
+	  "price": 25,
+	  "code": "CHARGER-USB",
+	  "stock": 40,
+	  "thumbnail": "img21.jpg",
+	  "category": "Accesorios"
+	},
+	{
+	  "name": "Base de Carga Inalámbrica",
+	  "description": "Carga inalámbrica para dispositivos compatibles.",
+	  "price": 30,
+	  "code": "BASE-CHARG",
+	  "stock": 35,
+	  "thumbnail": "img22.jpg",
+	  "category": "Accesorios"
+	},
+	{
+	  "name": "Proyector 4K",
+	  "description": "Resolución 4K, alta definición y brillo.",
+	  "price": 800,
+	  "code": "PROJ4K",
+	  "stock": 8,
+	  "thumbnail": "img23.jpg",
+	  "category": "Electrónica"
+	},
+	{
+	  "name": "Cámara de Seguridad IP",
+	  "description": "Resolución HD, visión nocturna.",
+	  "price": 100,
+	  "code": "CAM-IP",
+	  "stock": 25,
+	  "thumbnail": "img24.jpg",
+	  "category": "Hogar"
+	},
+	{
+	  "name": "Memoria USB 64GB",
+	  "description": "Almacenamiento portátil, USB 3.0.",
+	  "price": 20,
+	  "code": "USB-64GB",
+	  "stock": 50,
+	  "thumbnail": "img25.jpg",
+	  "category": "Computación"
+	},
+	{
+	  "name": "Monitor Gaming 27\"",
+	  "description": "Resolución Full HD, 144Hz.",
+	  "price": 350,
+	  "code": "MON-G27",
+	  "stock": 12,
+	  "thumbnail": "img26.jpg",
+	  "category": "Computación"
+	},
+	{
+	  "name": "Hub USB 4 Puertos",
+	  "description": "Expansión de puertos USB, compatible con USB 3.0.",
+	  "price": 30,
+	  "code": "USB-HUB4",
+	  "stock": 40,
+	  "thumbnail": "img27.jpg",
+	  "category": "Accesorios"
+	},
+	{
+	  "name": "Cargador de Baterías AA",
+	  "description": "Cargador rápido, incluye 4 baterías AA.",
+	  "price": 40,
+	  "code": "CHARGER-AA",
+	  "stock": 25,
+	  "thumbnail": "img28.jpg",
+	  "category": "Hogar"
+	},
+	{
+	  "name": "Aspiradora Robot",
+	  "description": "Limpieza automática, programación diaria.",
+	  "price": 250,
+	  "code": "ROBOT-ASP",
+	  "stock": 10,
+	  "thumbnail": "img29.jpg",
+	  "category": "Hogar"
+	},
+	{
+	  "name": "Cable HDMI 2.0",
+	  "description": "Cable de alta velocidad, 2 metros.",
+	  "price": 15,
+	  "code": "HDMI2.0",
+	  "stock": 60,
+	  "thumbnail": "img30.jpg",
+	  "category": "Accesorios"
+	},
+	{
+	  "name": "Enfriador de Aire",
+	  "description": "Enfriador compacto, ideal para espacios pequeños.",
+	  "price": 100,
+	  "code": "AIR-COOL",
+	  "stock": 15,
+	  "thumbnail": "img31.jpg",
+	  "category": "Hogar"
+	},
+	{
+	  "name": "Cámara de Acción 4K",
+	  "description": "Graba en 4K, resistente al agua.",
+	  "price": 180,
+	  "code": "CAM-4K",
+	  "stock": 20,
+	  "thumbnail": "img32.jpg",
+	  "category": "Fotografía"
+	},
+	{
+	  "name": "Cargador de Laptop Universal",
+	  "description": "Compatible con la mayoría de laptops, incluye adaptadores.",
+	  "price": 50,
+	  "code": "LAP-CHARGER",
+	  "stock": 25,
+	  "thumbnail": "img33.jpg",
+	  "category": "Computación"
+	},
+	{
+	  "name": "Base para Laptop",
+	  "description": "Ajustable, ergonómica.",
+	  "price": 35,
+	  "code": "LAP-BASE",
+	  "stock": 30,
+	  "thumbnail": "img34.jpg",
+	  "category": "Accesorios"
 	}
-]
+  ]
+  

@@ -1,3 +1,5 @@
+
+
 const socket = io();
 
 
@@ -20,7 +22,7 @@ document.addEventListener("click", function (event) {
 });
 
 
-socket.on("updateProducts", (productsDb) => {
+socket.on("/updateProducts", (prod)=> {
     const productsContainer = document.getElementById("productsContainer");
   productsContainer.innerHTML = "";
 
@@ -28,10 +30,10 @@ socket.on("updateProducts", (productsDb) => {
     const productHTML = `
           <div class="container">
             <div class="c1">
-            <h3>${product.title}</h3>
+            <h3>${product.name}</h3>
             </div>
             <p class="c2">${product.description}</p>
-            <p class="c3">Precio: $${product.precio}</p>
+            <p class="c3">Precio: $${product.price}</p>
             <p class="c4">Código: ${product.code}</p>
             ${
               product.stock
@@ -43,6 +45,4 @@ socket.on("updateProducts", (productsDb) => {
             `;
             
     productsContainer.innerHTML += productHTML;
-});
-});
-
+})})

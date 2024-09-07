@@ -13,12 +13,37 @@ h1{
 }
 
 .recuadro{
-
+display:flexbox;
     display: inline-block;
-    width: auto;
-    height: auto;
+width: 350px;
     background-color: rgb(187, 183, 183);
     border: 1px solid black;
     padding: 10px;
     margin: 10px;
+}
+/* Agregar al archivo CSS */
+header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    margin: 0 10px;
+}
+
+.filters {
+    float: left;
+    margin-right: 20px;
+}
+
+.filters form {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters input {
+    margin-bottom: 10px;
+    padding: 5px;
 }
